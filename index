@@ -1,0 +1,107 @@
+<html>
+  <head>
+   <style>
+   #titleDiv {
+  margin: auto;
+  background-color: #B4D4EE;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MagicAmuletSquare.svg/2000px-MagicAmuletSquare.svg.png);
+  background-size: contain;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titleDiv h1 {
+  font-size: 10vw;
+  color: #001100;
+}
+
+#functionDiv, #footerDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #22333B;
+  padding: 3vw;
+}
+
+#functionDiv p, #footerDiv p, #footerDiv a{
+  display: flex;
+  justify-content: center;
+text-decoration: none;
+  color: white;
+  padding: 0vw;
+  font-size: 2vw;
+}
+
+#palindromeClick{
+  outline: 2px solid;
+  padding: 3vw;
+  background-color: #EAE0D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+   </style>
+  </head>
+  <body>
+    <div id = titleDiv>
+    </div>
+    <div id = functionDiv>
+      <p>Click the box below and enter a word or sentence to check if it reads the same backwards.</p>
+      <br>
+    <div id = "palindromeClick" onclick = "palindrome()">Palindromes</div>
+    </div>
+    <div id = "footerDiv">
+      <p>Coded by</p>
+        <br>
+        <p><a href = "https://www.coderlist.io/profile/jimjule"> Jules</a></p>
+    </div>
+  </body>
+</html>
